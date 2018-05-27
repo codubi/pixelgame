@@ -38,8 +38,10 @@ El codigo cuenta con un sistema muy sencillo de autentificado mediante encriptac
 
 Cuando un usuario abre el juego, desde el cliente se envian 2 variables:
 
-Hash: Nombre de usuario o id que utilizes para identificarlos.
-Secret Key: Es el nombre de usuario encriptado en MD5
+| Variable | Descripcion |
+| ------ | ------ |
+| Hash | Nombre de usuario o id que utilizes para identificarlos. |
+| Secret Key |  Es el nombre de usuario encriptado en MD5 |
 
 Del lado del servidor esto se valida, y evita que los usuarios puedan saltar el limite de tiempo entre cada pixel.
 
