@@ -1,0 +1,29 @@
+{
+  "name": "pixelgame",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "roomdata": "^1.1.7-b",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "codubi",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codubi/pixelgame.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codubi/pixelgame/issues"
+  },
+  "homepage": "https://github.com/codubi/pixelgame#readme",
+  "description": ""
+}

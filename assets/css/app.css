@@ -1,0 +1,108 @@
+.red {background: #ca0000 !important;border-color: #910000 !important;}
+.blue {background: #069 !important;border-color: #003c6b !important;}
+.green {background: #093 !important;border-color: #006900 !important;}
+.yellow {background: #fc3 !important;border-color: #c89b00 !important;}
+.purple {background: #8e24aa !important;border-color: #5c007a !important;}
+.lightblue {background: #0075c7 !important;border-color: #004a96 !important;}
+.orange {background: #fb8c00 !important;border-color: #c25e00 !important;}
+.pink {background: #d81b60 !important;border-color: #a00037 !important;}
+.black {background: #131313 !important;border-color: #000000 !important;}
+.white {background: #fff !important;border-color: #cccccc !important;}
+.lightgreen {background: #14b53e !important;border-color: #008407 !important;}
+.grey {background: #a9a9a9 !important;border-color: #7a7a7a !important;}
+.brown {background: #795548 !important;border-color: #4b2c20 !important;}
+.lightorange {background: #f5bb80 !important;border-color: #c08b52 !important;}
+
+.colors {
+	position: fixed;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.colors ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px calc(50% - (50px * 7));
+}
+
+.clearfix {
+	clear: both;
+}
+
+.colors ul li {
+	width: 48px;
+	height: 48px;
+	float: left;
+	margin-left: 2px;
+	cursor: pointer;
+}
+
+body {
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.time {
+	display: none;
+	background: #006699;
+	border: 2px solid #043e5d;
+	text-align: center;
+	padding: 4px 16px;
+	width: 48px;
+	border-radius: 4px;
+	color: white;
+	text-shadow: 1px 1px 1px #3a3a3a;
+}
+
+.selectColor {
+	transform: scale(1.10);
+}
+
+.colors ul li:hover {
+	transform: scale(1.05);
+}
+
+.pixelCount {
+	background: #006699;
+	border: 2px solid #043e5d;
+	text-align: center;
+	padding: 4px 8px;
+	font-size: 14px;
+	position: relative;
+	border-radius: 4px;
+	color: white;
+	margin-bottom: 2px;
+	text-shadow: 1px 1px 1px #3a3a3a;
+}
+
+.pixelCount span i {
+	font-size: 14px;
+	margin-right: 6px;
+	position: relative;
+	top: -1px;
+}
+
+.hub {
+	position: fixed;
+	top: 16px;
+	left: 16px;
+}
+
+.level_info {
+	position: absolute;
+	font-size: 10px;
+	text-align: left;
+	left: 77px;
+	top: -2px;
+	width: 64px;
+	padding: 2px 7px;
+	color: #f5f5f5;
+	border-radius: 4px;
+	background: #006699;
+	border: 2px solid #043e5d;
+}
+
+.pixelCount span {
+	margin-right: 6px;
+} 

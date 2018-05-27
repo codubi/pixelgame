@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=2600,height=device-height,user-scalable=no">
+        <title>Voxed | Pixel Game 3.0</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href='http://localhost:8880/assets/css/app.css?v=1.0.1' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+        <canvas id="game" width="5200" height="5200" onclick="pixel(event);"></canvas>
+        <div class="hub">
+            <div class="pixelCount blue">
+                <span><i class="fas fa-gem"></i>0</span>
+                <span><i class="fas fa-bolt"></i>1</span>
+                <span><i class="fas fa-clock"></i>00:30</span>
+            </div>
+            <div class="time"><span>00:00</span></div>
+        </div>
+        <div class="colors">
+            <ul>
+                <li data-select="r" class="red selectColor"></li>
+                <li data-select="p" class="pink"></li>
+                <li data-select="v" class="purple"></li>
+                <li data-select="c" class="blue"></li>
+                <li data-select="l" class="lightblue"></li>
+                <li data-select="g" class="green"></li>
+                <li data-select="h" class="lightgreen"></li>
+                <li data-select="y" class="yellow"></li>
+                <li data-select="k" class="lightorange"></li>
+                <li data-select="o" class="orange"></li>
+                <li data-select="m" class="brown"></li>
+                <li data-select="b" class="black"></li>
+                <li data-select="z" class="grey"></li>
+                <li data-select="w" class="white"></li>
+            </ul>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://localhost:8880/socket.io/socket.io.js"></script>
+    <script src="http://localhost:8880/assets/js/sweet2.js?v=1.0.2"></script>
+    <script> 
+        var socket = io('http://localhost:8880/');  
+        var secret_key_pixelgame = "025784ffb49056f2909d88625f7d4fdc"; // Nombre de usuario encriptado en MD5
+        socket.emit('loadMap', { hash : "codubi", secret_key : secret_key_pixelgame });
+    </script>
+    <script src="http://localhost:8880/assets/js/app.js?v=1.0.1"></script> 
+</html> 
