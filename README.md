@@ -12,6 +12,12 @@ Para iniciar el juego es necesario primero instalar las dependencias de NodeJS m
 $ npm install
 ```
 
+Y luego iniciarlo mediante:
+
+```sh
+$ node server.js
+```
+
 # Niveles
 
 El sistema de niveles permite a los usuarios recortar el tiempo de espera entre cada pixel, avanzando de nivel cada cierta cantidad de pixels dibujados.
