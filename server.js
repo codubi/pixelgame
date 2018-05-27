@@ -1,3 +1,6 @@
+/*
+PixelGame.js creado por Codubi
+*/
 var fs = require('fs'),
 http = require('http'),
 express = require('express'),
