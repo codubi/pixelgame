@@ -147,7 +147,7 @@ socket.on("newPixel", function(data) {
                         // Chequea que el mapa exista
                         if (roomdata.get(socket, "map")) {
                             // Chequea el tiempo entre cada pixel
-                            //if ((actual_time - user_time) > delay) {
+                            if ((actual_time - user_time) > delay) {
                                 // Edita el mapa del servidor
                                 roomdata.get(socket, "map")[y][x] = color;
                                 // Envia el nuevo pixel a todos los usuarios
@@ -172,12 +172,12 @@ socket.on("newPixel", function(data) {
                                 if (previus_color == "w") {
                                     roomdata.set(socket, socket.username + "_pixel_count", Number(pixelCount + 1));
                                 }
-                           /* } else {
+                            } else {
                                 // Devuelve el tiempo faltante
                                 socket.emit("pixel_fail", {
                                     countdown: checkTime + 1
                                 });
-                            }*/
+                            }
                         } else {
                             console.log("[ Error ] El mapa no existe");
                         }
