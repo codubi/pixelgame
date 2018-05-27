@@ -6,6 +6,12 @@ Esta desarrollado en su totalidad en JavaScript, utilizando NodeJS del lado del 
 
 Del lado del cliente el juego es renderizado mediante Canvas, y la informacion circula por medio de Socket.io
 
+Para iniciar el juego es necesario primero instalar las dependencias de NodeJS mediante el comando:
+
+```sh
+$ npm install
+```
+
 # Niveles
 
 El sistema de niveles permite a los usuarios recortar el tiempo de espera entre cada pixel, avanzando de nivel cada cierta cantidad de pixels dibujados.
